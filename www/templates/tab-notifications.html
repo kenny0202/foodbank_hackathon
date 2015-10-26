@@ -1,0 +1,18 @@
+<ion-view view-title="GREATER VANCOUVER FOOD BANK">
+  <ion-content class="padding scroll-bg">
+
+        <div class="card stable-bg ink ink-dark bottom-padding notification-format" ng-repeat="post in validNewsPosts | filter: {tags: {name: 'important'}}">
+            <div class="item item-avatar item-text-wrap">
+                <span class="avatar" style="background-image: url('{{ post.avatar }}')">
+                </span>
+              <!-- <strong><h1>{{ post.title }}</h1></strong><br>
+                Posted on: {{ post.updated_at }}<br>
+                Posted by: {{ post.poster}} -->
+                <div class="card-footer text-left show-hide">
+                    <div ng-bind-html="post.content"></div>
+                </div>
+            </div>
+        </div>
+
+  </ion-content>
+</ion-view>

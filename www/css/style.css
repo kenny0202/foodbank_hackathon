@@ -1,0 +1,167 @@
+/* Empty. Add your own CSS if you like */
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+  font-family: "Montserrat";
+}
+
+.button .icon {
+  padding: 0 !important;
+}
+
+.dots {
+  vertical-align: middle;
+  padding: .5em 0 .5em 0;
+}
+
+.dots img {
+  box-shadow: none !important;
+  height: 3px;
+  width: 15px;
+}
+
+.bottom-padding {
+  margin-bottom: 1.5em;
+}
+
+.news-format {
+  border-radius: 0.3em;
+}
+
+.notification-format {
+  border-radius: 0.5em;
+  background-color: #f6f7f7 !important;
+}
+
+#map{
+    height:350px;
+}
+
+h3 {
+	color: #000000;
+	text-transform: uppercase;
+	font-family: "Montserrat";
+
+}
+
+h4 {
+	color: #4190C4;
+	text-transform: uppercase;
+	font-family: "Montserrat";
+
+}
+
+.button-feedback {
+	background-color: #4190C4;
+	color: #FFFFFF;
+}
+
+i.icon.ion-ios-home-outline {
+	margin: 0 auto;
+	font-size: 30px;
+}
+
+.button-feedback {
+	background-color: #4190C4;
+	color: #FFFFFF;
+}
+
+/*change the "ios"? */
+.tab-nav, .tabs, [nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
+	background-color: #4190C4;
+}
+
+.tab-nav, .tabs, [nav-bar-transition="android"] [nav-bar="active"] .bar, [nav-bar-transition="android"] [nav-bar="entering"] .bar {
+	background-color: #4190C4;
+}
+
+.bar, .bar .title {
+	height: 28px;
+	line-height: 28px;
+	font-size: 10px;
+}
+
+.tab-title, .icon, .bar.bar-stable .title{
+	color: #FFFFFF;
+}
+
+.feedbackformpage {
+	background-color: #E6E7E8;
+	margin-top: -3%;
+}
+
+/*.feedbackform {
+	background-color:;
+}
+*/
+.feedbackInput {
+	border-radius: 7px;
+}
+
+.feedbackform> {
+	margin-left: 20px;
+}
+
+.feedbackform>.feedbackInputForm>div.center {
+	width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+	font-weight: bold;
+	color: #4190C4;
+}
+
+.feedbackform>.feedbackInputForm>div {
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+.feedbackform>.feedbackInputForm>input {
+	margin-left: 20px;
+	width: 85%;
+	padding-left: 5px;
+}
+
+.feedbackform>.feedbackInputForm>textarea {
+	margin-left: 20px;
+	width: 85%;
+	resize: none;
+	padding: 5px;
+}
+
+.feedbackform>.feedbackInputForm>.sendFeedbackButton {
+	width: 25%;
+	float: right;
+	margin-right: 12%;
+	max-width: 100px;
+	color: white;
+	background-color: #4190C4;
+	height: 35px;
+}
+
+.feedbackButtons {
+	width: 100%;
+}
+
+.feedbackButtons>a {
+	width: 17%;
+	background-color: white;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 5px;
+	height: 30px;
+	text-align: center;
+	float: left;
+	padding-top:6px;
+	font-size: 2vw;
+}
+
+.feedbackButtons>a.selectedCategory {
+	color: #4190C4;
+}
+
+#searchBox{
+	border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}

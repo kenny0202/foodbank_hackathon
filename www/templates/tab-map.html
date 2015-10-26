@@ -1,0 +1,24 @@
+<ion-view view-title="GREATER VANCOUVER FOOD BANK">       
+    <ion-content data-tap-disabled="true" style="margin-top: -14px;">
+        <!-- Map is displayed here -->
+        <div id="map" lat="-23.639492" lng="133.709107" zoom="8" map>
+        </div>
+        <!-- Locations are displayed here -->
+        <div style="overflow-y: scroll; height: 42vh"> 
+        <div class="card stable-bg ink ink-dark" ng-repeat="foodbank in foodbankLocations">
+            <div class="item item-avatar item-text-wrap">
+                <span class="avatar">
+                    <label>
+                      <input type="checkbox" style="display: none" ng-model="expand" value="1"><span><i class="icon ion-ios-home-outline"></i></span>
+                    </label>
+                </span>
+              <strong>{{ foodbank.name }}</strong><br>
+                Address: {{ foodbank.address }}<br>
+                Phone: {{ foodbank.phone_number }}
+            </div>
+        </div>
+        </div>
+    </ion-content> 
+</ion-view>
+
+

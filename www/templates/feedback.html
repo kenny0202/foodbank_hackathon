@@ -1,0 +1,33 @@
+<ion-view view-title="GREATER VANCOVUER FOOD BANK">
+<ion-content class="padding scroll-bg feedbackformpage">
+
+<div class="feedbackform">
+	<form class="feedbackInputForm">
+		<br>
+		<div class="center"> SEND US FEEDBACK </div>
+		<br>
+		<div class="feedbackButtons">
+			<a ng-Click="selectQuestion()" id='questionButton' class='selectedCategory'>QUESTION</a>
+			<a ng-Click="selectProblem()" id='problemButton'>PROBLEM</a>
+			<a ng-Click="selectPraise()" id='praiseButton'>PRAISE</a>
+			<a ng-Click="selectIdea()" id='ideaButton'>IDEA</a>
+		</div>
+
+		<br><br><br>
+		<div>Name (Optional)</div> 
+		<input type="text" name="realname" id='nameInput' class='feedbackInput' maxlength=10000>
+		<br>
+		<div>How we can get back to you (phone number or email)</div> 
+		<input type="text" name="email" id='contactInput' class='feedbackInput' maxlength=10000>
+		<br>
+		<div>Message</div> 
+		<textarea name="comments" rows="15" id='messageInput' class='feedbackInput' maxlength=10000></textarea>
+		<br>
+		<button class="button" ng-click="myGoBack()">Cancel</button>
+		<input type="submit" id="sendButton" name: "Send" value="SEND" class="sendFeedbackButton button" ng-Click="handleFeedback()">
+		<br><br>
+	</form>
+</div>
+
+</ion-content>
+</ion-view>

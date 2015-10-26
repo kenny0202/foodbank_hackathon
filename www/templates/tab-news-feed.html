@@ -1,0 +1,42 @@
+<ion-view view-title="GREATER VANCOUVER FOOD BANK">
+  <ion-content class="padding scroll-bg">
+    <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()">
+    </ion-refresher>
+    <ion-list>
+    <div id="searchBox">
+      <label class="item item-input">
+        <span class="input-label" ng-model="test" placeholder="Search"></span>
+        <input type="text" ng-model="test" placeholder="Filter by tag">
+      </label>
+    </div>
+
+    <br>
+
+    <label ng-repeat="post in validNewsPosts | filter: {tags: {name: test}}">
+      <input type="checkbox" style="display: none" ng-model="expand" value="1">
+      <span>
+        <div class="card stable-bg ink ink-dark bottom-padding news-format">
+            <div class="item item-avatar item-text-wrap">
+                <span class="avatar" style="background-image: url('{{ post.avatar }}');">
+                </span>
+              <strong><h3 style="margin-top: 28px; text-transform: uppercase;">{{ post.title}}</h3> </strong>
+                <div ng-show="expand" class="card-footer text-left show-hide">
+                <p>by <b>{{post.poster}}</b> on <b> {{ post.updated_at }} </b> </p>
+                    <div ng-bind-html="post.content"></div>
+                    <br>
+                     <label ng-repeat="tag in post.tags" style="color: green;">
+                      <u><b>Tags: {{ tag.name }}</b> </u>
+                      </label>
+                </div>
+            </div>
+            <div ng-show="!expand" class="dots" align="center">
+              <img src="..\img\dots.png">
+            </div>
+        </div>
+        </span>
+      </label>
+
+
+    </ion-list>
+  </ion-content>
+</ion-view>
